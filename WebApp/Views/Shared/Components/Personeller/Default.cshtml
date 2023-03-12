@@ -1,0 +1,20 @@
+@model List<Personel>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="col">Id</th>
+            <th class="col">Ad</th>
+            <th class="col">Soyad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id </td>
+                <td>@item.Name</td>
+                <td>@item.LastName </td>
+            </tr>
+        }
+    </tbody>
+</table>
