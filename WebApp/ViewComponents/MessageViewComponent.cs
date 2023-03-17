@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
-namespace WebApp.ViewComponents.Message
+namespace WebApp.ViewComponents
 {
     public class MessageViewComponent : ViewComponent
     {
@@ -17,7 +17,7 @@ namespace WebApp.ViewComponents.Message
                 new Messagess { Id =13 , messages = "Salam3"},
                 new Messagess { Id =14 , messages = "Salam4"},
             };
-           return View("Messages", messages);
+            return View(viewName:"Default" , messages);
 
         }
     }
